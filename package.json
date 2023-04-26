@@ -1,0 +1,15 @@
+{
+  "name": "minha-estante-virtual-pessoal",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido por mim, para fins de estudos em desenvolvimento web e automação em cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "Taynara",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.10.0"
+  }
+}

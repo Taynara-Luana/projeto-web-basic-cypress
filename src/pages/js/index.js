@@ -11,3 +11,7 @@ function realizarLogin() {
 function mensagemPadrao(){
     alert('A página de esqueceu a sua senha, ainda não está pronta, volte mais tarde!')
 }
+
+function cadastroNovoUsuario(){
+    alert('A página de cadastro de novo usuário, ainda não está pronta, volte mais tarde!')
+}

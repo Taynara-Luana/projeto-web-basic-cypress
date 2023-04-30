@@ -47,5 +47,12 @@ describe("#Desenvolvimento dos testes automatizados de front na tela de login.",
                 expect(str).to.equal(`Usuário/senha inválidos.`)
             })
         })
+
+        it("CE06: Quando clicar no botão de esqueceu a sua senha, deve ser apresentada uma mensagem de alerta dizendo que a tela ainda não esta pronta.", ()=>{
+            cy.get('.esqueceuSenha').should('to.be', 'Esqueceu sua senha?').first().click();
+            cy.on('window:alert', (str) => {
+                expect(str).to.equal(`A página de esqueceu a sua senha, ainda não está pronta, volte mais tarde!`)
+            })
+        })
     })
 })

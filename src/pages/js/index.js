@@ -7,3 +7,7 @@ function realizarLogin() {
         alert("Usuário/senha inválidos.")
     }
 }
+
+function mensagemPadrao(){
+    alert('A página de esqueceu a sua senha, ainda não está pronta, volte mais tarde!')
+}

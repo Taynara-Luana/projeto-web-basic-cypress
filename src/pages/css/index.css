@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #20B2AA;
 }
 
-form{
+form {
     background-color: aliceblue;
     max-width: 500px;
     width: 70%;
@@ -19,14 +19,14 @@ form{
     transform: translate(-50%, -50%);
 }
 
-form h3{
+form h3 {
     text-align: center;
     color: rgb(18, 20, 20);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 form input[type=text],
-form input[type=password]{
+form input[type=password] {
     width: 100%;
     height: 45px;
     border: 1px solid #5F9EA0;
@@ -34,7 +34,7 @@ form input[type=password]{
     margin: 10px 0;
 }
 
-form input[type=submit]{
+form input[type=submit] {
     width: 100%;
     height: 30px;
     cursor: pointer;
@@ -45,16 +45,38 @@ form input[type=submit]{
     transition: 1s;
 }
 
-form input[type=submit]:hover{
+form input[type=submit]:hover {
     background-color: #708090;
     cursor: pointer;
 }
 
-form input[type=submit]:disabled{
+form input[type=submit]:disabled {
     opacity: 4;
     cursor: default;
 }
 
-form input[type=submit]:disabled:hover{
+form input[type=submit]:disabled:hover {
     background-color: #d6e9e8;
+}
+
+a:link,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #708090
+}
+
+a:active {
+    text-decoration: none
+}
+
+a:link{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+    color: #20B2AA;
 }

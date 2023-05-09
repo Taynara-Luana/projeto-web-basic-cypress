@@ -11,11 +11,15 @@
 </head>
 
 <body>
-    <form>
-        <h3>Acesse a plataforma</h3>
-        <input type="text" name="email" id="email" placeholder="Seu login..." />
-        <input type="password" name="senha" id="senha" placeholder="Sua senha..." />
-        <input type="submit" name="btnLogin" id="btnLogin" value="Realizar Login" onclick="Evento()"/>
+    <form id="formulario">
+
+        <h3>PAINEL DE CONTROLE</h3>
+        <h2>Acesse a plataforma</h2>
+        <input type="text" name="login" id="login" placeholder="Seu login..." required />
+        <input type="password" name="senha" id="senha" placeholder="Sua senha..." required />
+        <input type="submit" name="btnLogin" id="btnLogin" value="Realizar Login" onclick="realizarLogin()" />
+
+        <a href="#" class="esqueceuSenha" onclick="mensagemPadrao()">Esqueceu sua senha?</a>
     </form>
 </body>
 

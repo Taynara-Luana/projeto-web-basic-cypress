@@ -4,8 +4,7 @@
   "description": "Projeto desenvolvido por mim, para fins de estudos em desenvolvimento web e automação em cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "test": "cypress run"
+    "test": "npx cypress open"
   },
   "author": "Taynara",
   "license": "ISC",

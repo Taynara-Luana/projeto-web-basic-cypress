@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>MINHA ESTANTE PESSOAL TL</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="../css/home.css">
-    <script src='js/index.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/home.css">
+
+    <title>MPTL-Home</title>
 </head>
 
 <body>
-    <header>
-        <div class="caixa_principal">
-            <h1>
-                <img src="../img/leitura.jpeg" class="logo_principal">
-            </h1>
-        </div>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre.html">Minha estante</a>
+            <a class="cabecalho__menu__link" href="cadastro_livros.html">Cadastrar Livros</a>
+            <a class="cabecalho__menu__link" href="quem_somos.html">Quem somos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+            <a class="cabecalho__menu__link" href="index.html">Sair<a>
+        </nav>
     </header>
-    
-    <nav class="menu-minha-estante-virtual-pessoal">
-        <ul class="menu-principal">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Cadastros</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Livros </a></li>
-                        <li><a href="#">Usuários</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Configurações</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="index.html">Sair</a></li>
-        </ul>
-    </nav>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Tenha todo o controle de <strong class="apresentacao__conteudo__titulo__destaque">seus livros favoritos em um só
+                lugar</strong></strong></h1>
+            <p class="apresentacao__conteudo__texto">Com a plataforma MPTL você pode realizar o cadastro dos livros em
+                que está lendo, e também cadastrar livros em uma lista de desejos, já estava me esquecendo, você também
+                pode atualizar seus livros para a categoria já lidos!</p>
+                <p class="apresentacao__conteudo__texto">E para que a sua experiência possa ser incrível, não deixe manter a sua lista de books atualizada diariamente.</p>
+                <p class="apresentacao__conteudo__texto"> Encontrou uma melhoria? Você pode nos reportar através da nossa aba "<a href="contato.html">Contato</a>".</p>
+        </section>
+        <img src="../img/livros.png" alt="souTaynaraLuana" class="apresentacao__imagem">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Taynara Luana</p>
+    </footer>
 </body>
 
 </html>

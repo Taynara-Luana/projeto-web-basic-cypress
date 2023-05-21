@@ -5,22 +5,43 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>MINHA ESTANTE PESSOAL TL</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen" />
     <script type="text/javascript" src="../js/index.js"></script>
 </head>
 
 <body>
-    <form id="formulario">
+    <div class="container">
+        <div class="card">
+            <h1>Entrar</h1>
+            
+            <div class="label-float">
+                <input type="tex" id="usuario" placeholder="">
+                <label for ='usuario'>Usuário</label>
+            </div>
 
-        <h3>PAINEL DE CONTROLE</h3>
-        <h2>Acesse a plataforma</h2>
-        <input type="text" name="login" id="login" placeholder="Seu login..." required />
-        <input type="password" name="senha" id="senha" placeholder="Sua senha..." required />
-        <input type="submit" name="btnLogin" id="btnLogin" value="Realizar Login" onclick="realizarLogin()" />
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="">
+                <label for ='usuario'>Senha</label>
+            </div>
 
-        <a href="#" class="esqueceuSenha" onclick="mensagemPadrao()">Esqueceu sua senha?</a>
-    </form>
+            <div class="justify-center">
+                <button>Acessar</button>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <p class="cadastre_se">Não tem uma conta?
+                <a href="">Cadastre-se</a>
+            </p>
+
+            <p class="redefinir">Esqueceu sua senha?
+                <a href="">Redefinir</a>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
     --cor-opcao1: #424242;
     --cor-opcao2: #F5F5F5;
     --cor-opcao3: hsl(336, 61%, 64%);
+    --cor-opacao4: #2196F3;
     --cor-hover: #E91E63;
 }
 
@@ -16,7 +17,6 @@ body {
     box-sizing: content-box;
     background-color: var(--cor-opcao1);
     color: var(--cor-opcao2);
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 .cabecalho {
@@ -31,6 +31,7 @@ body {
 .cabecalho__menu__link {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     color: var(--cor-opcao2);
     text-decoration: none;
 }
@@ -39,49 +40,68 @@ body {
     color: var(--cor-hover);
 }
 
-#campoContatoLink{
-    color: var(--cor-opcao2);
-    text-decoration: none;
-}
-
-#campoContatoLink:hover{
-    color: var(--cor-hover);
-    text-decoration: none;
-}
-
-.apresentacao {
-    padding: 8% 15%;
+.principal {
+    padding: 5% 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 82px;
 }
 
-.apresentacao__conteudo {
+.principal__dados__pessoais {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
 }
 
-.apresentacao__conteudo__titulo {
+.principal__dados__pessoais__titulo {
     font-size: 2.25rem;
     text-align: center;
-    color: var(--cor-opcao2);
 }
 
-.apresentacao__conteudo__titulo__destaque{
-    color: var(--cor-opcao3);
+.principal__dados__pessoais label {
+    font-size: 1.2rem;
 }
 
-.tituloPrincipal {
+.principal__dados__pessoais input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.principal__dados__pessoais input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.principal__dados__pessoais textarea {
+    border-radius: 10px;
+}
+
+#btnCadastrarNovoUsuario{
+    background-color: var(--cor-opacao4);
     color: var(--cor-opcao1);
+    text-decoration: none;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 34px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
 }
 
-.apresentacao__conteudo__texto {
-    color: var(--cor-opcao2);
-    font-size: 1.5rem;
-    text-align: justify;
+.apresentacao__links {
+    display: flex;
+    justify-content: center;
+}
+
+#btnCadastrarNovoUsuario:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-opcao1);
+    cursor: pointer;
 }
 
 .rodape {
@@ -99,16 +119,16 @@ body {
         padding: 10%;
     }
 
-    .cabecalho__menu{
+    .cabecalho__menu {
         justify-content: center;
     }
 
-    .apresentacao {
+    .principal {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .apresentacao__conteudo{
+    .principal__dados__pessoais {
         width: auto;
     }
 }

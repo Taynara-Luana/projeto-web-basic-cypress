@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/contato.css">
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">Home</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Minha estante</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Cadastrar Livros</a>
+            <a class="cabecalho__menu__link" href="cadastro_usuario.html">Cadastrar Usuário</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Quem somos</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Contato</a>
+            <a class="cabecalho__menu__link" href="index.html">Sair<a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <form class="principal__dados__pessoais" action="" class="adicionar" id="novoContato">
+            <h1 class="principal__dados__pessoais__titulo">Por favor, informe seus dados</h1>
+
+            <label>Nome Completo</label>
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+
+            <label>Email</label>
+            <input type="text" id="emailContato" placeholder="Email" required>
+
+            <label>Telefone/ Celular</label>
+            <input type="text" id="nomeCompleto" placeholder="(XX)XXXXX-XXXX" required>
+
+            <label>Descreva os motivos do seu contato:</label>
+            <textarea required></textarea>
+
+            <div class="apresentacao__links">
+                <input type="submit" value="Adicionar"  id="btnEnviarContato" class="apresentacao__links_link">
+            </div>
+        </form>
+
+        <img src="assets/contato.png" alt="souTaynaraLuana" class="apresentacao__imagem">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Taynara Luana</p>
+    </footer>
+
+</body>
+
+</html>

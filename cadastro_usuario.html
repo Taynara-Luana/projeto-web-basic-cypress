@@ -6,40 +6,53 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>MINHA ESTANTE PESSOAL TL</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="stylesheet" type="text/css" href="../css/cadastro_usuario.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./styles//cadastro_usuario.css" media="screen" />
     <script type="text/javascript" src="../js/index.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <h1>Cadastro de novo usuário</h1>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">Home</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Minha estante</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Cadastrar Livros</a>
+            <a class="cabecalho__menu__link" href="cadastro_usuario.html">Cadastrar Usuário</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Quem somos</a>
+            <a class="cabecalho__menu__link" href="#" onclick="mensagemPadrao()">Contato</a>
+            <a class="cabecalho__menu__link" href="index.html">Sair<a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <form class="principal__dados__pessoais" action="" class="adicionar" id="novoCadastroUsuario">
+            <h1 class="principal__dados__pessoais__titulo">Cadastro de novo usuário</h1>
+
+            <label for='nomeCompletonome'>Nome completo</label>
+            <input type="text" id="nomeCompleto" placeholder="" required>
+
+            <label for='email'>Email</label>
+            <input type="email" id="email" placeholder="" required>
+           
+            <label for='email'>Email</label>
+            <input type="email" id="email" placeholder="" required>
             
-            <div class="label-float">
-                <input type="text" id="nomeCompleto" placeholder="" required>
-                <label for ='nomeCompletonome'>Nome completo</label>
+            <label for='senha'>Senha</label>
+            <input type="password" id="senha" placeholder="" required>
+            
+            <label for='confirmarSenha'>Confirmar Senha</label>
+            <input type="password" id="confirmarSenha" placeholder="" required>
+           
+            <div class="apresentacao__links">
+                <input type="submit" value="Cadastrar"  id="btnCadastrarNovoUsuario" class="apresentacao__links_link">
             </div>
+        </form>
 
-            <div class="label-float">
-                <input type="email" id="email" placeholder="" required>
-                <label for ='email'>Email</label>
-            </div>
+        <img src="assets/usuarios.png" alt="souTaynaraLuana" class="apresentacao__imagem">
+    </main>
 
-            <div class="label-float">
-                <input type="password" id="senha" placeholder="" required>
-                <label for ='senha'>Senha</label>
-            </div>
-
-            <div class="label-float">
-                <input type="password" id="confirmarSenha" placeholder="" required>
-                <label for ='confirmarSenha'>Confirmar Senha</label>
-            </div>
-
-            <div class="justify-center">
-                <a href="#"><button>Cadastrar Novo Usuário</button></a>
-            </div>  
-        </div>
-    </div>
+    <footer class="rodape">
+        <p>Desenvolvido por Taynara Luana</p>
+    </footer>
 </body>
 
 </html>

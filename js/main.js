@@ -2,15 +2,15 @@ const usuario = document.getElementById('usuario');
 const senha = document.getElementById('senha');
 
 
-function realizaLoginValido(){
-    if(usuario.value === 'admin' & senha.value ==='123'){
+function realizaLoginValido() {
+    if (usuario.value === 'admin' & senha.value === '123') {
         window.location = 'home.html'
-    }else{
+    } else {
         alert('Usuário ou senha inválidos.')
     }
 }
 
-function mensagemPadrao(){
+function mensagemPadrao() {
     alert('Essa funcionalidade ainda não está pronta!');
 }
 //Validação da mascara de telefone
@@ -25,3 +25,12 @@ const mascaraTelefone = (valor) => {
     telefone.value = valor // Insere o(s) valor(es) no campo
 }
 // Fim da Validação da mascara de telefone
+
+//Validando botão de sair
+function validaBotaoSair() {
+    var btnSair = confirm("Você realmente deseja sair da aplicação?")
+    if(btnSair == true){
+        window.location = 'index.html'
+    }
+}
+// Fim da validação do botão de sair

@@ -35,7 +35,7 @@
             <input type="text" id="emailContato" placeholder="Email" required>
 
             <label>Telefone/ Celular</label>
-            <input type="text" id="nomeCompleto" placeholder="(XX)XXXXX-XXXX" required>
+            <input type="text" id="telefone" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
 
             <label>Descreva os motivos do seu contato:</label>
             <textarea required></textarea>
@@ -51,7 +51,7 @@
     <footer class="rodape">
         <p>Desenvolvido por Taynara Luana</p>
     </footer>
-
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
